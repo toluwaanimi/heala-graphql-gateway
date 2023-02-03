@@ -1,0 +1,59 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Auth {
+  """Example field (placeholder)"""
+  name: String
+
+  """Example field (placeholder)"""
+  age: Int
+
+  """Example field (placeholder)"""
+  email: String
+}
+
+type AuthUserModel {
+  """Example field (placeholder)"""
+  user: Auth
+
+  """Example field (placeholder)"""
+  token: String
+
+  """Example field (placeholder)"""
+  status: String!
+
+  """Example field (placeholder)"""
+  message: String!
+}
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  login(loginUserInput: LoginUserInput!): AuthUserModel!
+  registerUser(registerUserInput: RegisterUserInput!): AuthUserModel!
+}
+
+input LoginUserInput {
+  """Example field (placeholder)"""
+  email: String!
+
+  """Example field (placeholder)"""
+  password: String!
+}
+
+input RegisterUserInput {
+  """Example field (placeholder)"""
+  name: String!
+
+  """Example field (placeholder)"""
+  age: Float!
+
+  """Example field (placeholder)"""
+  email: String!
+
+  """Example field (placeholder)"""
+  password: String!
+}
