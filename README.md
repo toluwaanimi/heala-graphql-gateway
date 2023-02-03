@@ -71,3 +71,45 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+# Sample Request
+
+BASE URL: 
+```javascript
+http://54.217.254.91:3000/graphql
+
+```
+
+```jql
+mutation{
+  registerUser(registerUserInput:{email:"aa@a.com",password:"password", name:"Emmanuel", age:1}){
+    status
+    message
+    user{
+      age
+      name
+      email
+    }
+    token
+  }
+}
+
+```
+
+
+
+```jql
+mutation{
+  loginUser(loginUserInput:{email:"aa@a.com",password:"password"}){
+    status
+    message
+    user{
+      age
+      name
+      email
+    }
+    token
+  }
+}
+
+```
